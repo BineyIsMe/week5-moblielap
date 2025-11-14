@@ -79,10 +79,25 @@ class CustomButton extends StatelessWidget{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: const [
-              CustomButton(label: "kon", icon: IconData(726)),
-              CustomButton(label: "kon", icon: IconData(726)),
-              CustomButton(label: "kon", icon: IconData(726)),
-             
+                          CustomButton(
+              label: "Travelling",
+              icon: Icons.favorite,
+              iconPosition: IconPos.left,
+              buttontype: Buttontype.primary,
+            ),
+            SizedBox(height: 20),
+            CustomButton(
+              label: "Skating",
+              icon: Icons.audiotrack,
+              iconPosition: IconPos.right,
+              buttontype: Buttontype.secondary,
+            ),
+            SizedBox(height: 20),
+            CustomButton(
+              label: "Disabled",
+              icon: Icons.block,
+              buttontype: Buttontype.disabled,
+            ),
             ],
           ),
         ),
